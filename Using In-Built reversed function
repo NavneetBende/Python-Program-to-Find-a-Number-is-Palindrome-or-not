@@ -1,0 +1,14 @@
+def checkPalindrome(str):
+    # using inbuilt reversed function
+    reverse = ''.join(reversed(str))
+
+    if str == reverse:
+        return True
+
+    return False
+
+
+# main function
+s = "kayak"
+
+print("Palindrome") if checkPalindrome(s) else print("Not Palindrome")
