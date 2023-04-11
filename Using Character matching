@@ -1,0 +1,18 @@
+def checkPalindrome(str):
+
+    # check if str[i] is same as str[len(str) - i - 1]
+    # for whole string
+    for i in range(0, len(str)):
+
+        # Basically, we are checking i-th character is
+        # same as i-th character from the end or not
+        if str[i] != str[len(str) - i - 1]:
+            return False
+
+    return True
+
+
+# main function
+s = "kayak"
+
+print("Palindrome") if checkPalindrome(s) else print("Not Palindrome")
