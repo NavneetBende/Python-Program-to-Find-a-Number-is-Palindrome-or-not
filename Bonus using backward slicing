@@ -1,0 +1,13 @@
+str1 = "radar"
+n = len(str1)
+c = []
+for i in range(n - 1, -1, -1):
+    c.append(str1[i])
+
+rev = "".join(c)
+
+print(str1 + " is: ", end="")
+if str1 == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
